@@ -15,7 +15,7 @@ const projects = [
     description: "An app designed to connect customers who need domestic services with qualified professionals.",
     tech: ["React", "Vite", "TailWind", "Firebase"],
     link: "https://domesti-app.vercel.app/", // EDIT THIS LINK
-    github: "#",
+    github: "https://github.com/lucianojacofsky/DomestiApp",
     image: "https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=1196&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=80&w=800",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description: "A powerful, full-stack URL shortener with integrated QR generation and click tracking. ",
     tech: ["Node.js", "SQLite", "HTML", "CSS"],
     link: "https://qr-url-shortener-phi.vercel.app/", // EDIT THIS LINK
-    github: "#",
+    github: "https://github.com/lucianojacofsky/QR-Url-Shortener",
     image: "https://images.unsplash.com/photo-1550482768-88b710a445fd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&q=80&w=800",
   },
   {
@@ -31,15 +31,15 @@ const projects = [
     description: "Real-time audio processing and dynamic graphics tool.",
     tech: ["Web Audio API", "Canvas", "JavaScript"],
     link: "https://visualizador-de-sonido.vercel.app/", // EDIT THIS LINK
-    github: "#",
-    image: "https://images.unsplash.com/photo-1724185773486-0b39642e607e?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=80&w=800",
+    github: "https://github.com/lucianojacofsky/Visualizador-De-Sonido",
+    image: "https://images.unsplash.com/photo-1724185773486-0b39642e607e?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3Dauto=format&fit=crop&q=80&w=800",
   },
   {
     title: "Minesweeper Solver",
     description: "An advanced solver utilizing a hybrid AI approach.",
     tech: ["TypeScript", "JSON", "SQLite"],
     link: "https://github.com/lucianojacofsky/Minesweeper-Solver", // EDIT THIS LINK
-    github: "#",
+    github: "https://github.com/lucianojacofsky/Minesweeper-Solver",
     image: "https://plus.unsplash.com/premium_photo-1707599548250-f2e4780ebf03?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=80&w=800",
   },
   // ADDED SPACE FOR TWO MORE PROJECTS BELOW
@@ -48,7 +48,7 @@ const projects = [
     description: "Is a real-time collaborative image editor where multiple users work on the same canvas.",
     tech: ["React", "Motion", "Tailwind", "Node.js"],
     link: "https://collab-edit-chi.vercel.app/", // EDIT THIS LINK
-    github: "#",
+    github: "https://github.com/lucianojacofsky/CollabEdit",
     image: "https://plus.unsplash.com/premium_photo-1722156533656-b22cbcf1c82e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=80&w=800",
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     description: "is a professional-grade performance analytics platform designed for Tier-1 rugby scouting.",
     tech: ["Python", "AI", "SQLite"],
     link: "https://scout-rugby.vercel.app/", // EDIT THIS LINK
-    github: "#",
+    github: "https://github.com/lucianojacofsky/ScoutRugby",
     image: "https://images.unsplash.com/photo-1529663297269-6d349ec39b57?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=80&w=800",
   },
 ];
@@ -84,13 +84,13 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <a 
-                href={project.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <Card className="overflow-hidden border-none bg-card hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-1">
+              <Card className="overflow-hidden border-none bg-card hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
                   <div className="relative aspect-video overflow-hidden">
                     <img
                       src={project.image}
@@ -102,24 +102,33 @@ export default function Projects() {
                       <ExternalLink className="text-white w-8 h-8 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all" />
                     </div>
                   </div>
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-2">
-                      <h4 className="text-xl font-bold font-heading group-hover:text-primary transition-colors">{project.title}</h4>
-                      <Github className="w-5 h-5 text-muted-foreground hover:text-white transition-colors" />
-                    </div>
-                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map((t) => (
-                        <Badge key={t} variant="secondary" className="text-[10px] uppercase tracking-wider font-sans">
-                          {t}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </a>
+                </a>
+                <CardContent className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <h4 className="text-xl font-bold font-heading hover:text-primary transition-colors">{project.title}</h4>
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} source code on GitHub`}
+                    >
+                      <Github className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
+                    </a>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((t) => (
+                      <Badge key={t} variant="secondary" className="text-[10px] uppercase tracking-wider font-sans">
+                        {t}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
         </div>

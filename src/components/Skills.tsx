@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Code2, 
-  Layout, 
-  Zap, 
-  Database, 
-  Terminal, 
-  Figma, 
+import {
+  Code2,
+  Layout,
+  Zap,
+  Database,
+  Terminal,
+  Figma,
   GitBranch,
   Monitor
 } from "lucide-react";
@@ -14,23 +14,22 @@ import {
 const skills = [
   { name: "Python", icon: Terminal },
   { name: "SQL", icon: Database },
-  { name: "React", icon: Layout },
-  { name: "Next.js", icon: Zap },
+  { name: "R", icon: Code2 },
+  { name: "Sheets / Excel", icon: Database },
   { name: "TypeScript", icon: Code2 },
+  { name: "React", icon: Layout },
   { name: "Node.js", icon: Terminal },
   { name: "Tailwind CSS", icon: Layout },
   { name: "Git", icon: GitBranch },
   { name: "Figma", icon: Figma },
   { name: "C / C++", icon: Code2 },
-  { name: "R", icon: Code2 },
-  { name: "Sheets / Excel", icon: Database },
   { name: "English C1", icon: Zap },
 ];
 
 const services = [
   {
     title: "Custom Web Development",
-    description: "Building robust and scalable web applications using React, Next.js, and Tailwind CSS.",
+    description: "Building robust and scalable web applications using React, TypeScript, and Tailwind CSS.",
     icon: Layout
   },
   {

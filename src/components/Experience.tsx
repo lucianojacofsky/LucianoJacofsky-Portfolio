@@ -25,12 +25,13 @@ export default function Experience() {
                 className="relative pl-8 border-l-2 border-muted"
               >
                 <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-background" />
-                <span className="text-sm font-medium text-primary mb-1 block">March 2026</span>
-                <h4 className="text-xl font-bold">Teaching Assistant (Auxiliary Professor)</h4>
-                <p className="text-muted-foreground font-medium mb-2">PADI</p>
+                <span className="text-sm font-medium text-primary mb-1 block">Aug 2026 - Present</span>
+                <h4 className="text-xl font-bold">Operations & Data Intern</h4>
+                <p className="text-muted-foreground font-medium mb-2">Universidad Torcuato Di Tella — Executive Education</p>
                 <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                  <li>Private tutor for Mathematics, Programming, and Statistics</li>
-                  <li>Contributed to the creation and review of study materials</li>
+                  <li>Managing invoicing, collections, and payment reconciliation data in Google Sheets/Excel across three business lines</li>
+                  <li>Maintaining registrant and membership databases, ensuring data integrity and traceability</li>
+                  <li>Generating administrative and financial reports for leadership</li>
                 </ul>
               </motion.div>
 
@@ -42,13 +43,30 @@ export default function Experience() {
                 className="relative pl-8 border-l-2 border-muted"
               >
                 <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-background" />
+                <span className="text-sm font-medium text-primary mb-1 block">March 2026 - Present</span>
+                <h4 className="text-xl font-bold">Teaching Assistant (Auxiliary Professor)</h4>
+                <p className="text-muted-foreground font-medium mb-2">PADI</p>
+                <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                  <li>Tutored 15+ students in Mathematics, Programming, and Statistics, teaching 2-3 sessions per week</li>
+                  <li>Co-created and revised 10+ study materials and problem sets</li>
+                </ul>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="relative pl-8 border-l-2 border-muted"
+              >
+                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-background" />
                 <span className="text-sm font-medium text-primary mb-1 block">Jun 2024 - Mar 2025</span>
                 <h4 className="text-xl font-bold">Data Entry Analyst</h4>
                 <p className="text-muted-foreground font-medium mb-2">Labomed</p>
                 <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                  <li>Managed critical patient and administrative data across internal systems</li>
-                  <li>Performed quality control and verification of uploaded records</li>
-                  <li>Improved data accessibility by maintaining digital file systems</li>
+                  <li>Reviewed ~150 patient and administrative records per week across internal systems, part-time (~4 hrs/day)</li>
+                  <li>Performed quality control, correcting ~20-30 inconsistencies per month</li>
+                  <li>Reduced entry errors by introducing automated processes and standardized templates</li>
                 </ul>
               </motion.div>
             </div>

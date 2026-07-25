@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import emailjs from "@emailjs/browser";
@@ -93,7 +93,7 @@ export default function Contact() {
               <Card className="p-6 border-none bg-muted/30">
                 <CardContent className="p-0 flex items-center gap-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-primary" />
+                    <Linkedin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-sm">Linkedin</h4>
@@ -154,10 +154,10 @@ export default function Contact() {
                     placeholder="How can I help you?"
                   />
                 </div>
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full rounded-lg h-12" 
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full rounded-lg h-12"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

@@ -24,7 +24,7 @@ export default function Hero() {
             Luciano Jacofsky
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            Building modern, high-performance digital experiences with a focus on React, Next.js, and Python.
+            Building modern, data-driven web experiences with React, TypeScript, and Python.
           </p>
         </motion.div>
 
@@ -38,7 +38,7 @@ export default function Hero() {
             <a href="#projects">View Projects</a>
           </Button>
           <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
-            {/* 
+            {/*
               CV CONFIGURATION :
               1. Place your PDF file in the '/public' folder of the project.
               2. Rename the file to 'resume.pdf' OR update the 'href' below.
